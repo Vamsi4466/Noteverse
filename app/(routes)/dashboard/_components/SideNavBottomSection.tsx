@@ -13,8 +13,12 @@ import {
 } from "@/components/ui/dialog"
 import { Input } from '@/components/ui/input'
 import Constant from '@/app/_constant/Constant'
+<<<<<<< HEAD
 import Header from './Header'
 // import PricingDialog from './PricingDialog'
+=======
+import PricingDialog from './PricingDialog'
+>>>>>>> 06aa319 (added editor and canvas functionalities)
 function SideNavBottomSection({onFileCreate,totalFiles}:any) {
   const menuList=[
     {
@@ -52,7 +56,11 @@ function SideNavBottomSection({onFileCreate,totalFiles}:any) {
   <Button className='w-full bg-blue-600 
       hover:bg-blue-700 justify-start mt-3'>New File</Button>
   </DialogTrigger>
+<<<<<<< HEAD
   {totalFiles < Constant.MAX_FREE_FILE? 
+=======
+  {totalFiles<Constant.MAX_FREE_FILE? 
+>>>>>>> 06aa319 (added editor and canvas functionalities)
   <DialogContent>
     <DialogHeader>
       <DialogTitle>Create New File</DialogTitle>
@@ -76,7 +84,11 @@ function SideNavBottomSection({onFileCreate,totalFiles}:any) {
           </DialogClose>
         </DialogFooter>
   </DialogContent>:
+<<<<<<< HEAD
   <Header />}
+=======
+  <PricingDialog/>}
+>>>>>>> 06aa319 (added editor and canvas functionalities)
 </Dialog>
 
      

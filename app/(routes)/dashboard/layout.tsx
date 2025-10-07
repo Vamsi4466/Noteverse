@@ -6,8 +6,11 @@ import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 import SideNav from './_components/SideNav';
 import { FileListContext } from '@/app/_context/FilesListContext';
+<<<<<<< HEAD
 // import SideNav from './_components/SideNav';
 // import { FileListContext } from '@/app/_context/FilesListContext';
+=======
+>>>>>>> 06aa319 (added editor and canvas functionalities)
 
 function DashboardLayout(
     {
@@ -39,7 +42,11 @@ function DashboardLayout(
       <FileListContext.Provider value={{fileList_,setFileList_}}>
       <div className='grid grid-cols-4'>
           <div className='bg-white h-screen w-72 fixed'>
+<<<<<<< HEAD
           <SideNav />
+=======
+          <SideNav/>
+>>>>>>> 06aa319 (added editor and canvas functionalities)
           </div>
           <div className='col-span-4 ml-72'>
           {children}

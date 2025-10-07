@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 'use client';
+=======
+>>>>>>> 06aa319 (added editor and canvas functionalities)
 
 import { LoginLink, RegisterLink } from '@kinde-oss/kinde-auth-nextjs'
 import Image from 'next/image'

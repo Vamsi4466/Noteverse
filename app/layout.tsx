@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+<<<<<<< HEAD
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ConvexClientProvider from "./ConvexClientProvider";
@@ -12,6 +13,16 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+=======
+import { Inter } from "next/font/google";
+import "./globals.css";
+import ConvexClientProvider from "./ConvexClientProvider";
+import { Toaster } from "@/components/ui/sonner";
+import Head from "next/head";
+import Script from "next/script";
+
+const inter = Inter({ subsets: ["latin"] });
+>>>>>>> 06aa319 (added editor and canvas functionalities)
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,11 +36,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+<<<<<<< HEAD
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ConvexClientProvider>{children}</ConvexClientProvider>
       </body>
+=======
+       <Head>
+        <Script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_GOOGLE_ADS_CLIENT_ID}`}
+          strategy="lazyOnload"
+          crossOrigin="anonymous"
+        />
+      </Head>
+      <body className={inter.className}>
+        <ConvexClientProvider>
+         {children}
+         <Toaster />
+        </ConvexClientProvider>
+        </body>
+>>>>>>> 06aa319 (added editor and canvas functionalities)
     </html>
   );
 }
