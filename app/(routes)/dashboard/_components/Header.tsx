@@ -13,7 +13,6 @@ function Header() {
             <input type='text' placeholder='Search'/>
         </div>
         <div>
-<<<<<<< HEAD
             {user?.picture && (
             <Image
                 src={user.picture}
@@ -23,13 +22,6 @@ function Header() {
                 className="rounded-full"
             />
             )}
-=======
-            <Image src={user?.picture} alt='user'
-            width={30}
-            height={30}
-            className='rounded-full'
-            />
->>>>>>> 06aa319 (added editor and canvas functionalities)
         </div>
         <Button className='gap-2 flex text-sm
         h-8 hover:bg-blue-700 bg-blue-600
