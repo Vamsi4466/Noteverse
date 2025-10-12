@@ -78,8 +78,6 @@ const FileList = () => {
                 <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                   <FileActionDropdown
                     file={file}
-                    onFileUpdate={handleFileUpdate}
-                    onFileDelete={handleFileDelete}
                   />
                 </td>
               </tr>
