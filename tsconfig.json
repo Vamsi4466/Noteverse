@@ -1,13 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es2015",           // Changed to ES2015 to allow spreading Uint8Array
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "target": "ES2020",                     // Required for BigInt and spread on Uint8Array
+    "downlevelIteration": true,             // Allows spreading iterables like Uint8Array
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true,                   // Ignores type errors in node_modules (Convex)
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -17,17 +14,13 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "downlevelIteration": true,   // Added to safely iterate TypedArrays even with older targets
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    "types": ["@sentry/node"],
     "paths": {
-      "@/*": [
-        "./*"
-      ]
-    }
+      "@/*": ["./*"]
+    },
+    "plugins": [
+      { "name": "next" }
+    ]
   },
   "include": [
     "next-env.d.ts",
