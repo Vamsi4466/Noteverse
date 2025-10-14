@@ -47,13 +47,13 @@ function Hero() {
 
         {/* Right illustration */}
         <div className="hidden lg:block lg:w-1/2 relative">
-          <Image
-            src="https://source.unsplash.com/600x400/?technology,workspace" // Replace with your illustration file
+          {/* <Image
+            src=""
             alt="Noteverse Workspace"
             width={600}
             height={400}
             className="rounded-xl shadow-2xl"
-          />
+          /> */}
         </div>
       </div>
     </section>
