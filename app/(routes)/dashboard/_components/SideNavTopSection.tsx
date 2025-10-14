@@ -49,6 +49,7 @@ function SideNavTopSection({ user, setActiveTeamInfo }: any) {
   }, [activeTeam]);
 
   const getTeamList = async () => {
+    // @ts-expect-error: Type inference too deep for Convex query
     const result = await convex.query(api.teams.getTeam, { email: user?.email });
     console.log("TeamList", result);
     setTeamList(result);
